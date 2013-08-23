@@ -1,0 +1,130 @@
+
+<section class="container">
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a href="/3-cay" class="brand">guys</a>
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+<section class="container">
+  <div class="highlight row">     
+   	<h2>we believe in something</h2>     
+   </div>      
+</section>
+<div class="container">       
+  <h3 class="subhead">really</h3>
+</div>
+<section class="section-box shadow">
+    <div class="container">       
+        <div class="row">         
+            <article class="span4 center-align">          
+                <h3>funny</h3>
+                <%= image_tag 'site/sticker.png' %>
+                
+                
+                <p><strong><%= link_to '3 cây', :cay %></strong></p>
+                <p>
+                    enjoy your free time
+                </p>
+                
+            </article>
+            <article class="span4 center-align">
+                <h3>simple</h3>
+                <%= image_tag 'site/number.gif' %>
+                
+                <p><strong>finding numbers</strong></p>
+                <p>
+                	looks simple, hidden challenges
+                </p>
+                
+                
+            </article>
+            <article class="span4 center-align">
+            <h3>productive</h3>
+              <%= image_tag 'site/teams.png' %>
+                
+                <p>
+          			<strong>soools</strong>
+                </p>                
+                <p>
+                  make works done
+                </p>
+                
+            </article>                      
+      </div>
+    </div>   
+</section> 
+
+
+<section class="container">
+  <div class="row">
+        <div class="offset3 span6">
+            <hr class="shadow-line"/>
+        </div>
+    </div>
+  <div class="row">
+      <div class="highlight span12">
+            <h3><strong>support us</strong> by subscribing to our potential queue</h3> 
+            <h3 class="subhead"><strong>you</strong> receive gifts or promotions</h3> 
+          <p><a href="#myModal" class="big-btn" role="button" data-toggle="modal">yes, let me in</a></p>            
+            <p>your email is <strong>value to us</strong>. we never spam.</p>                      
+      </div>
+    </div>
+</section>
+
+<div id="myModal" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>subscribe </h3>
+  </div>
+  <div class="modal-body">
+    <div class='alert alert-success' id='subres' style='display:none;'></div>
+    <p>subscribe to get the updated information about our works. fun, simple, and productive :-)</p>
+    <p>&nbsp;</p>
+      <% @subscriber = Subscriber.new %>
+      <%= form_for @subscriber, :action => new_subscriber_path, :remote => true, :html => {:class => 'form-horizontal'} do |f| %>
+         <div class="control-group">
+        <label class="control-label">Your name</label>
+        <div class="controls">
+          <%= f.text_field :fullname, :class => 'input-large' %>
+        </div>
+      </div>
+      
+      <div class="control-group">
+        <label class="control-label">Email address</label>
+        <div class="controls">
+          <%= f.text_field :email, :class => 'input-large' %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">&nbsp;</label>
+        <div class="controls">
+          <%= f.submit 'subscribe now', :class => 'btn btn-primary' %>
+        </div>
+      </div>
+        <% end %>   
+  </div>
+  
+  
+</div>
+
+<footer class="container footer-box">   
+    <hr class="shadow-line" />         
+    <nav class="links">             
+        <a href="#">contact us</a>
+        <a href="#">tos and privacy</a>
+        <a href="#">feedback</a>                   
+    </nav>  
+    <nav class="links">   
+        <a href="#"><%= image_tag 'twitter-icon.png' %></a>
+        <a href="#"><%= image_tag 'facebook-icon.png' %></a>   
+        <a href="#"><%= image_tag 'googleplus-icon.png' %></a>      
+    </nav>                 
+    <p>we are <strong>excited</strong></p>           
+</footer>

@@ -1,0 +1,159 @@
+<section class="container">
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a href="/" class="brand">3 cây</a>
+                <ul class="nav">
+                    <li class="active"><a href="#">3 cây </a></li>
+                    <li><a href="#hd">hướng dẫn</a></li>
+                    <li><%= link_to 'liên hệ', new_contact_path %></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section class="container">
+    <div class="row">
+        <header class="highlight span12">
+            <h2>đơn giản và vui vẻ với <strong>3 cây</strong></h2>       
+            <%= image_tag 'quang/banner.png', :id => 'feature-screenshot' %>        
+            <p><a href="#" class="big-btn">sẵn sàng cài đặt ngay</a></p>
+            <p>chơi <strong>3 cây</strong> tý cho vui. <a href="#">vào chơi luôn</a> không cần đăng ký.</p>     
+        </header>        
+    </div>   
+    <div class="row">
+      <div class="offset3 span6">
+          <hr class="shadow-line"/>
+        </div>
+    </div>      
+</section>
+
+<section class="container">
+  <div class="highlight row">     
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">                 
+                    <p>
+                        <%= image_tag 'quang/login.png', :alt=>'login' %>
+                    </p>         
+                    <article class="carousel-caption">                                         
+                        <h3>lời chào mừng</h3>
+                        <p class="center-align">vui tính</p>  
+                    </article>                                        
+                </div>
+                <div class="item">      
+                    <p>                           
+                        <%= image_tag 'quang/lobby.png' %>
+                    </p>           
+                    <article class="carousel-caption">                  
+                        <h3><strong>3 cây</strong> vốn phổ biến</h3>       
+                        <p class="center-align">chơi là ăn liền</p>                                                   
+                    </article>
+                </div>
+                <div class="item">                  
+                    <p>                    
+                        <%= image_tag 'quang/play.png', :alt=>'play'%>                       
+                        
+                    </p>      
+                    <article class="carousel-caption">                        
+                        <h3 class="quotes">có thể kiếm thêm phần thưởng</h3>       
+                        <p class="center-align">- áo phông kẹo lạc.</p>                            
+                    </article>
+                </div>
+               
+            </div> 
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>           
+        </div> 
+    </div>      
+</section>
+<div class="container">       
+  <h3 id='hd' class="subhead">chơi như nào đây ...</h3>
+</div>
+<section class="section-box shadow">
+    <div class="container">       
+        <div class="row">         
+            <article class="span4 center-align">       
+                <%= image_tag 'quang/multidevice.png' %>   
+                
+                <h3>tham gia</h3>
+                <p><i>"chơi sớm được nhiều xèng"</i></p>
+                <p>
+                    nhảy vào chơi tự nhiên hoặc đăng nhập = FB
+                </p>
+                <p>
+                    
+                </p>
+            </article>
+            <article class="span4 center-align">
+                <%= image_tag 'quang/doden.png' %>
+                
+                <h3>đặt cược</h3>
+                <p><i>"đặt nhiều ăn nhiều, lật nhanh thắng lớn"</i></p><p>
+                kiếm được phần thưởng nếu <strong>thắng nhiều :-)</strong>
+                </p>
+                <p>
+                   
+                </p>
+                
+            </article>
+            <article class="span4 center-align">
+
+              <%= image_tag 'quang/friends.png' %>
+                <h3>chat</h3>
+                <p>
+          <i>"vừa chơi vừa chửi"</i>
+                </p>                
+                <p>
+                  nhớ là ... <strong> kiềm chế!</strong>
+                </p>
+                <p>
+                   
+                </p>
+            </article>                      
+      </div>
+    </div>   
+</section> 
+
+<section class="container mobile-button">
+  <p>   
+      <a href="#"><%= image_tag 'appstore.png' %></a>
+      <a href="#"><%= image_tag 'googleplay.png' %></a>
+    </p>       
+</section>
+
+<section class="container">
+  <div class="row">
+        <div class="offset3 span6">
+            <hr class="shadow-line"/>
+        </div>
+    </div>
+  <div class="row">
+      <div class="highlight span12">
+            <h3>chơi <strong>3 cây</strong>, vui vẻ và nhẹ nhàng.</h3> 
+            <h3 class="subhead">không mất công <strong>suy nghĩ</strong>, cứ thế liền tay</h3> 
+            
+          <p><a href="#" class="big-btn btn btn-danger">chơi ngay đây</a></p>            
+            <p>tham gia sớm để <strong>có nhiều xèng :-)</strong>. miễn phí và luôn như vậy.</p>                      
+      </div>
+    </div>
+</section>
+
+
+<footer class="container footer-box">   
+    <hr class="shadow-line" />         
+    <nav class="links">             
+        <a href="#">some guys</a>
+        <a href="#">hướng dẫn</a>
+        <a href="#">liên hệ</a>
+        <a href="#">quy chế</a>
+        <a href="#">hỗ trợ</a>                   
+    </nav>  
+    <nav class="links">   
+        <a href="#"><%= image_tag 'twitter-icon.png' %></a>
+        <a href="#"><%= image_tag 'facebook-icon.png' %></a>   
+        <a href="#"><%= image_tag 'googleplus-icon.png' %></a>      
+    </nav>                 
+    <p>xây dựng bởi <strong>some guys</strong></p>           
+</footer>
