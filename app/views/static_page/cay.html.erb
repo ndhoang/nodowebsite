@@ -17,7 +17,7 @@
     <div class="row">
         <header class="highlight span12">
             <h2>đơn giản và vui vẻ với <strong>3 cây</strong></h2>       
-            <%= image_tag 'quang/banner.png', :id => 'feature-screenshot' %>        
+            <%= image_tag 'quang/banner.png', :id => 'feature-screenshot', :class=>"img-rounded img-polaroid" %>        
             <p><a href="#" class="big-btn">sẵn sàng cài đặt ngay</a></p>
             <p>chơi <strong>3 cây</strong> tý cho vui. <a href="#">vào chơi luôn</a> không cần đăng ký.</p>     
         </header>        
@@ -35,7 +35,7 @@
             <div class="carousel-inner">
                 <div class="item active">                 
                     <p>
-                        <%= image_tag 'quang/login.png', :alt=>'login' %>
+                        <%= image_tag 'quang/login.png', :alt=>'login', :class=>"img-rounded img-polaroid" %>
                     </p>         
                     <article class="carousel-caption">                                         
                         <h3>lời chào mừng</h3>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="item">      
                     <p>                           
-                        <%= image_tag 'quang/lobby.png' %>
+                        <%= image_tag 'quang/lobby.png',:class=>"img-rounded img-polaroid" %>
                     </p>           
                     <article class="carousel-caption">                  
                         <h3><strong>3 cây</strong> vốn phổ biến</h3>       
@@ -53,7 +53,7 @@
                 </div>
                 <div class="item">                  
                     <p>                    
-                        <%= image_tag 'quang/play.png', :alt=>'play'%>                       
+                        <%= image_tag 'quang/play.png', :alt=>'play', :class=>"img-rounded img-polaroid"%>                       
                         
                     </p>      
                     <article class="carousel-caption">                        
@@ -68,14 +68,14 @@
         </div> 
     </div>      
 </section>
-<div class="container">       
+<div class="container" style='height: 65px;'>       
   <h3 id='hd' class="subhead">chơi như nào đây ...</h3>
 </div>
 <section class="section-box shadow">
     <div class="container">       
         <div class="row">         
             <article class="span4 center-align">       
-                <%= image_tag 'quang/multidevice.png' %>   
+                <%= image_tag 'quang/multidevice.png', :class=>"img-polaroid" %>   
                 
                 <h3>tham gia</h3>
                 <p><i>"chơi sớm được nhiều xèng"</i></p>
@@ -87,7 +87,7 @@
                 </p>
             </article>
             <article class="span4 center-align">
-                <%= image_tag 'quang/doden.png' %>
+                <%= image_tag 'quang/doden.png',:class=>"img-polaroid" %>
                 
                 <h3>đặt cược</h3>
                 <p><i>"đặt nhiều ăn nhiều, lật nhanh thắng lớn"</i></p><p>
@@ -100,7 +100,7 @@
             </article>
             <article class="span4 center-align">
 
-              <%= image_tag 'quang/friends.png' %>
+              <%= image_tag 'quang/friends.png',:class=>"img-polaroid" %>
                 <h3>chat</h3>
                 <p>
           <i>"vừa chơi vừa chửi"</i>
